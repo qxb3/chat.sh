@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 app.use(express.text())
 
-const messages = ['Hi']
+const messages = []
 
 app.post('/send', (req, res) => {
   messages.push(req.body)
